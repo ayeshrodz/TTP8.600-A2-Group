@@ -1,0 +1,27 @@
+\usepackage{geometry}
+\geometry{
+    a4paper
+}
+\usepackage{graphicx}
+\usepackage{lineno,hyperref}
+\usepackage{url}
+
+\usepackage{tikz} % Useful for drawing images, used for creating the frontpage
+\usetikzlibrary{positioning} % Additional library for relative positioning 
+\usetikzlibrary{calc} % Additional library for calculating within tikz
+
+\makeatletter
+\renewcommand{\MaketitleBox}{%
+  \resetTitleCounters
+  \def\baselinestretch{1}%
+  \begin{center}
+    \def\baselinestretch{1}%
+    \Large \@title \par
+    \vskip 18pt
+    \normalsize\elsauthors \par
+    \vskip 10pt
+    \footnotesize \itshape \elsaddress \par
+  \end{center}
+  \vskip 12pt
+}
+\makeatother

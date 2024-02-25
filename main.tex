@@ -1,30 +1,13 @@
 \documentclass[5p,times]{elsarticle}
-\usepackage{geometry}
-\geometry{
-    a4paper
-}
-\usepackage{graphicx}
-\usepackage{lineno,hyperref}
-\usepackage{url}
 
-
-\makeatletter
-\renewcommand{\MaketitleBox}{%
-  \resetTitleCounters
-  \def\baselinestretch{1}%
-  \begin{center}
-    \def\baselinestretch{1}%
-    \Large \@title \par
-    \vskip 18pt
-    \normalsize\elsauthors \par
-    \vskip 10pt
-    \footnotesize \itshape \elsaddress \par
-  \end{center}
-  \vskip 12pt
-}
-\makeatother
-
+\input{General/Preamble}
+\input{General/Settings}
 
 \begin{document}
-sample
+
+\begin{frontmatter}
+\input{Chapters/0. Frontpage.tex}
+\end{frontmatter}
+
+
 \end{document} 
