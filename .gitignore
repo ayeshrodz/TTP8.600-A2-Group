@@ -9,3 +9,7 @@
 *.out
 *.spl
 *.gz
+
+# bib file build files
+*.bbl
+*.blg
