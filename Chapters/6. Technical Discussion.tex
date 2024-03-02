@@ -24,6 +24,8 @@ The mobile app for a cenrtalized platform of childcare services offers instant a
 
 \subsection{High-Level Deployment Design of the Proposed Solution}
 
+The proposed cross-platform mobile application solution while the backend is proposed to be deployed as microservices on cloud infrastructure, an API gateway for routing, an IAM component for authentication and a scalable database. The proposed design is as follows; 
+
 % \begin{figure*}[htp]
 % 	\center
 % 	{{\includegraphics[width=0.55\textwidth,keepaspectratio]{Figures/diagram.png}}}
@@ -37,3 +39,13 @@ The mobile app for a cenrtalized platform of childcare services offers instant a
 	\caption{Deployment design diagram in high-level}%
 	\label{fig:deploymentdiagram}%
 \end{figure}
+
+
+\begin{itemize}
+    \item \textbf{Mobile Application} – Flutter framework is selected to develop the application due to the cross-platform efficiency, rapid and cost-effective app creation with a single codebase, and dynamic UI components make it a preferred choice for mobile app development. \cite{el2017taxonomy}
+    \item \textbf{API Gateway} - MuleSoft has been chosen as the API gateway for its robust features, including centralized management, rate limiting, policy management, and seamless integration with various systems, enabling the development of a scalable and efficient infrastructure. \cite{zylstra2018extended}
+    \item \textbf{Load Balancer} - Using a load balancer like Nginx or F5 ensures optimal performance, reliability, scalability, and availability by evenly distributing incoming network traffic, dynamically adjusting server resources, and automatically rerouting traffic away from unhealthy servers. \cite{tudor2009towards}
+    \item \textbf{IAM server} - Okta was chosen as a flexible and comprehensive identity management solution that offers customizable policies, automation for streamlined operations, and robust security features including multi-factor authentication. \cite{fang2019okra} 
+    \item \textbf{Database Server} - A non-relational database, MongoDB was selected due to it's renowned for supporting complex mobile apps with transactional, search, and analytical features, it excels in managing large volumes of unstructured data with flexibility.
+    \item \textbf{Micro-Service Cluster for backend APIs} - Scalability and independent functionalities are enabled through micro-service architecture in this communication platform which helps for flexibility and service uptime maintenance.
+\end{itemize}
