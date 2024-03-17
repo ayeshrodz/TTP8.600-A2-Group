@@ -6,13 +6,13 @@
 \begin{document}
 
 \begin{frontmatter}
-\input{Chapters/0. Frontpage}
+    \input{Chapters/0. Frontpage}
 \end{frontmatter}
 
 % --------------- SECTIONS ---------------
 
 % Introduction
-\input{Chapters/1. Introduction} 
+\input{Chapters/1. Introduction}
 
 % Background Study and Analysis
 \input{Chapters/2. Background Analysis}
@@ -29,10 +29,23 @@
 % Detailed Technical Discussion of the Solution
 \input{Chapters/6. Technical Discussion}
 
+% Potential Users or Groups
+\input{Chapters/7. Potential users or groups}
+
+% User Stories and Low Fidelity Wireframes
+% \input{Chapters/8. User stories and lfw}
+
 % Conclusion
-\input{Chapters/7. Conclusion}
+\input{Chapters/9. Conclusion}
 
 \bibliographystyle{IEEEtran}
 \bibliography{General/Referance}
+
+% Appendix A
+\includepdf[pages={-}, pagecommand=\thispagestyle{plain}]{Appendix/Appendix_A}
+
+% Appendix B
+% \includepdf[pages={-},pagecommand=\thispagestyle{plain}]{Appendix/Appendix_B_1}
+% \includepdf[pages={-},pagecommand=\thispagestyle{plain},fitpaper,rotateoversize]{Appendix/Appendix_B_2}
 
 \end{document}
